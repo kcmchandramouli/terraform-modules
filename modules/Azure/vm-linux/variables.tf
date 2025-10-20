@@ -13,6 +13,11 @@ variable "location" {
     type        = string  
 }
 
+variable "network_interface_ids" {  
+    description = "The IDs of the network interfaces"
+    type        = list(string)
+}
+
 variable "vm_size" {
     description = "The size of the Linux Virtual Machine"
     type        = string
